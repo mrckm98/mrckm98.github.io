@@ -29,7 +29,7 @@
       }
       .btn {
         padding: 15px 30px;
-        font-size: 25px;
+        font-size: 1.2rem;
         background-color: #7843e9;
         color: white;
         border-radius: 6px;
@@ -50,15 +50,18 @@
         border-radius: 10%;
       }
       .m-bot {
-        margin-bottom: 80px;
+        margin-bottom: 4rem;
       }
       h1 {
         text-align: center;
       }
       h2 {
-        font-size: 45px;
+        font-size: 2.2rem;
         letter-spacing: 5px;
         text-transform: uppercase;
+      }
+      .font1 {
+        font-size: 1rem;
       }
       .blank {
         width: 100%;
@@ -68,6 +71,7 @@
         position: fixed;
         bottom: 35px;
         right: 20px;
+        font-size: 1rem;
       }
       .msg #msg-text {
         padding: 8px 12px;
@@ -77,6 +81,7 @@
         color: #7843e9;
         text-decoration: none;
         box-shadow: rgba(0, 18, 46, 0.18) 0px 2px 20px 0px;
+        font-size: 1.5rem;
       }
 
       .msg #msg-text:hover {
@@ -86,7 +91,7 @@
       .msg #msg-btn {
         background-color: #fff;
         padding: 10px;
-        font-size: 25px;
+        font-size: 1.5rem;
         border-radius: 40%;
         color: #7843e9;
         box-shadow: rgba(0, 18, 46, 0.18) 0px 2px 20px 0px;
@@ -98,13 +103,13 @@
       header {
         position: sticky;
         top: 0;
-        height: 100px;
+        height: 5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: 23px;
+        font-size: 1.1rem;
         background-color: #fff;
-        padding: 0 50px;
+        padding: 0 2rem;
       }
       .logo {
         display: flex;
@@ -112,8 +117,8 @@
         font-family: "Anton", sans-serif;
       }
       .logo .logo-img {
-        height: 60px;
-        width: 60px;
+        height: 3rem;
+        width: 3rem;
         border-radius: 50%;
         background-color: rgb(100, 164, 219);
         margin-right: 15px;
@@ -121,11 +126,11 @@
       .logo-link {
         color: black;
         text-decoration: none;
-        font-size: 28px;
+        font-size: 1.4rem;
         letter-spacing: 1.5px;
       }
       header .nav-list {
-        min-width: 450px;
+        min-width: 16rem;
         display: flex;
         justify-content: space-around;
         font-weight: 500;
@@ -133,7 +138,7 @@
       header .nav-list a {
         color: black;
         text-decoration: none;
-        padding: 20px 30px;
+        padding: 1rem 1.5rem;
       }
       header .nav-list a:hover {
         color: #7843e9;
@@ -148,11 +153,11 @@
       }
       .container #home h1 {
         text-transform: uppercase;
-        font-size: 60px;
+        font-size: 3rem;
         letter-spacing: 2px;
       }
       .container #home p {
-        font-size: 20px;
+        font-size: 1rem;
         text-align: center;
       }
 
@@ -164,10 +169,10 @@
         height: 80vh;
       }
       .about h3 {
-        font-size: 26px;
+        font-size: 1.3rem;
       }
       .about p {
-        font-size: 20px;
+        font-size: 1rem;
       }
       .about .left-box {
         width: 55%;
@@ -184,6 +189,7 @@
         padding: 6px 15px;
         border-radius: 5px;
         margin: 8px 15px 0 0;
+        font-size: 1.1rem;
       }
       .about .skill:hover {
         background-color: #bebabae3;
@@ -206,6 +212,7 @@
       }
       .pro-left-box {
         width: 42%;
+        margin: auto 0;
       }
       .pro-left-box img {
         width: 100%;
@@ -214,11 +221,12 @@
         width: 42%;
       }
       .pro-right-box h3 {
-        font-size: 30px;
+        font-size: 1.5rem;
         letter-spacing: 4px;
       }
       .pro-right-box p {
         margin-bottom: 50px;
+        font-size: 1rem;
         color: rgba(0, 0, 0, 0.43);
       }
       .contact {
@@ -240,7 +248,7 @@
           0 5px 14px 0 rgba(0, 0, 0, 0.18);
       }
       .contact-box label {
-        font-size: 18px;
+        font-size: 1.9rem;
         color: #6b6b6b;
         margin-bottom: -20px;
       }
@@ -256,7 +264,7 @@
         border: 0;
       }
       .contact-box .input::placeholder {
-        font-size: 15px;
+        font-size: 0.75rem;
       }
       .contact-box .input:focus {
         outline: none;
@@ -268,7 +276,7 @@
       footer {
         background-color: black;
         height: 40vh;
-        font-size: 16px;
+        font-size: 0.8rem;
         color: #fff;
         display: flex;
         flex-direction: column;
@@ -309,9 +317,24 @@
         margin-bottom: -30px;
         align-self: center;
       }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 950px) {
+        html {
+          font-size: 16px;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        html {
+          font-size: 12px;
+        }
+      }
+      @media screen and (max-width: 600px) {
         html {
           font-size: 10px;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        html {
+          font-size: 8px;
         }
       }
     </style>
@@ -391,7 +414,7 @@
         <section id="projects" class="blank"></section>
         <div class="projects">
           <h2 class="under-line">Projeler</h2>
-          <p class="m-bot">
+          <p class="m-bot font1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ex
             assumenda laudantium?
           </p>
