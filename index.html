@@ -71,7 +71,6 @@
         position: fixed;
         bottom: 35px;
         right: 20px;
-        font-size: 1rem;
       }
       .msg #msg-text {
         padding: 8px 12px;
@@ -317,6 +316,12 @@
         margin-bottom: -30px;
         align-self: center;
       }
+      @media screen and (min-width: 900px) {
+        #msg-text,
+        #msg-btn {
+          font-size: 1rem !important;
+        }
+      }
       @media screen and (max-width: 950px) {
         html {
           font-size: 16px;
@@ -477,19 +482,19 @@
         <section id="contact" class="blank"></section>
         <div class="contact">
           <h2 class="under-line">İletişim</h2>
-          <p class="m-bot">
+          <p class="m-bot font1">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque,
             et?
           </p>
           <div class="contact-box m-bot">
-            <label for="name">Name</label>
+            <label for="name" class="font1">Name</label>
             <input
               class="input"
               type="text"
               id="name"
               placeholder="Enter Your Name"
             />
-            <label for="email">Email</label>
+            <label for="email" class="font1">Email</label>
             <input
               class="input"
               type="email"
@@ -497,7 +502,7 @@
               id="email"
               placeholder="Enter Your Email"
             />
-            <label for="message">Message</label>
+            <label for="message" class="font1">Message</label>
             <textarea
               class="input"
               name=""
