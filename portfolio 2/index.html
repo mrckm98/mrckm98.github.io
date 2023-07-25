@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehmet 2</title>
+    <link
+      rel="shortcut icon"
+      href="webpositive-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;600&family=Bebas+Neue&display=swap");
+      * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        font-size: 20px;
+      }
+      h1 {
+        letter-spacing: 0.1rem;
+        line-height: 2rem;
+      }
+      .fb1 {
+        display: flex;
+        justify-content: space-between;
+      }
+      .fb1a {
+        width: 60%;
+      }
+      .fb1b {
+      }
+
+      a {
+        text-decoration: none;
+      }
+      .btn {
+        background-color: rgb(221, 50, 50);
+        border-radius: 10px;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+      }
+      .btn:hover {
+        animation: scale 1s;
+      }
+      @keyframes scale {
+        100% {
+          transform: translateY(100px);
+        }
+      }
+      .btn i {
+        margin-left: 10px;
+        font-size: 1.1rem;
+      }
+      /* header start */
+      header {
+        width: 200px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-right: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+      }
+      .logo {
+        width: 100px;
+        height: 50px;
+        background-color: purple;
+      }
+      .nav {
+        display: flex;
+        flex-direction: column;
+      }
+      .nav a {
+        margin-bottom: 15px;
+        padding: 10px 25px 5px 5px;
+        text-decoration: none;
+        border-bottom: 0.5px solid rgba(0, 0, 0, 0.271);
+        color: black;
+      }
+      .nav a:hover {
+        color: rgb(243, 86, 86);
+      }
+      .nav a i {
+        margin-right: 10px;
+      }
+      .social {
+        text-align: center;
+        text-transform: uppercase;
+      }
+      /* header end */
+
+      /* main start */
+      main {
+      }
+      .container {
+        position: absolute;
+        width: calc(100% - 201px);
+        top: 0;
+        left: 200px;
+      }
+      #home {
+        height: 80vh;
+        background-color: gray;
+        padding: 50px 40px;
+        line-height: 1.5rem;
+      }
+      #home .image {
+        width: 150px;
+        height: 250px;
+        background-color: aqua;
+        animation: jump 5s infinite;
+      }
+      @keyframes jump {
+        50% {
+          transform: translateY(100px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+      #home p {
+        margin-bottom: 60px;
+      }
+
+      #project {
+        padding: 50px 40px;
+        margin-top: -25px;
+        background-color: #fff;
+      }
+      .pros {
+        display: flex;
+        flex-direction: column;
+      }
+      .pro {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+      }
+      .pro-text {
+        width: 45%;
+        height: 300px;
+      }
+      .pro-img-box {
+        height: 300px;
+        width: 45%;
+        display: flex;
+        align-items: center;
+      }
+      .pro-img {
+        width: 100%;
+      }
+      #about {
+        background-color: #fff;
+        height: 100vh;
+      }
+      #contact {
+        height: 100vh;
+      }
+      /* main end */
+      /* footer start */
+      .footer {
+        text-align: center;
+      }
+      /* footer end */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <div class="nav">
+        <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#project"
+          ><i class="fa-solid fa-diagram-project"></i>Project</a
+        >
+        <a href="#about"><i class="fa-solid fa-user"></i>About</a>
+        <a href="#contact"><i class="fa-solid fa-comment"></i>Contact</a>
+      </div>
+      <div class="social">
+        <h3>social</h3>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div id="home">
+          <div class="fb1">
+            <div class="fb1a">
+              <h1>Merhaba, Ben Mehmet Çıkım</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea
+                quibusdam, debitis repellendus similique aliquam. Aliquam soluta
+                ipsa officiis iusto suscipit dolorum enim distinctio porro
+                aperiam facilis. Vitae natus facere recusandae repudiandae hic
+                deserunt ad, accusamus ipsam ullam unde. Magnam.
+              </p>
+              <a href="#" class="btn">Benimle Çalış</a>
+            </div>
+            <div class="fb1b">
+              <div class="image"></div>
+            </div>
+          </div>
+        </div>
+        <div id="project">
+          <h2>Projelerim</h2>
+          <div class="pros">
+            <div class="pro">
+              <div class="pro-text">
+                <h3>Address Book</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tenetur dolore facilis corporis culpa omnis maxime repellendus
+                  obcaecati id quisquam, possimus, minima tempora eum incidunt
+                  error!
+                </p>
+                <a href="" class="btn"
+                  >Github<i class="fa-brands fa-github"></i
+                ></a>
+                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+              </div>
+              <div class="pro-img-box">
+                <img src="dopefolio.jpg" class="pro-img" alt="" />
+              </div>
+            </div>
+            <div class="pro">
+              <div class="pro-text">
+                <h3>Address Book</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tenetur dolore facilis corporis culpa omnis maxime repellendus
+                  obcaecati id quisquam, possimus, minima tempora eum incidunt
+                  error!
+                </p>
+                <a href="" class="btn"
+                  >Github<i class="fa-brands fa-github"></i
+                ></a>
+                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+              </div>
+              <div class="pro-img-box">
+                <img src="dopefolio.jpg" class="pro-img" alt="" />
+              </div>
+            </div>
+            <div class="pro">
+              <div class="pro-text">
+                <h3>Address Book</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tenetur dolore facilis corporis culpa omnis maxime repellendus
+                  obcaecati id quisquam, possimus, minima tempora eum incidunt
+                  error!
+                </p>
+                <a href="" class="btn"
+                  >Github<i class="fa-brands fa-github"></i
+                ></a>
+                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+              </div>
+              <div class="pro-img-box">
+                <img src="dopefolio.jpg" class="pro-img" alt="" />
+              </div>
+            </div>
+            <div class="pro">
+              <div class="pro-text">
+                <h3>Address Book</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tenetur dolore facilis corporis culpa omnis maxime repellendus
+                  obcaecati id quisquam, possimus, minima tempora eum incidunt
+                  error!
+                </p>
+                <a href="" class="btn"
+                  >Github<i class="fa-brands fa-github"></i
+                ></a>
+                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+              </div>
+              <div class="pro-img-box">
+                <img src="dopefolio.jpg" class="pro-img" alt="" />
+              </div>
+            </div>
+            <div class="pro">
+              <div class="pro-text">
+                <h3>Address Book</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Tenetur dolore facilis corporis culpa omnis maxime repellendus
+                  obcaecati id quisquam, possimus, minima tempora eum incidunt
+                  error!
+                </p>
+                <a href="" class="btn"
+                  >Github<i class="fa-brands fa-github"></i
+                ></a>
+                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+              </div>
+              <div class="pro-img-box">
+                <img src="dopefolio.jpg" class="pro-img" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="about">
+          <h2>Hakkımda</h2>
+          <h3>Ben Mehmet Çıkım</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            modi laborum magnam labore a, commodi totam tenetur. Doloremque
+            facilis cum maiores, similique, nemo rem sed officia earum nesciunt
+            eius magni soluta quas, quibusdam nam? Odio quae modi dolorem
+            perferendis quibusdam?
+          </p>
+          <div class="info">
+            <div class="items">
+              <div class="item">Rol:Full Stack</div>
+              <div class="item">
+                Email:
+                <a href="mailto:mehmetckm1@gmail.com">mehmetckm1@gmail.com</a>
+              </div>
+              <div class="item">Freelance:Musait</div>
+              <div class="item"></div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-value">
+                <div class="stat-left">HTML</div>
+                <div class="stat-right">%95</div>
+              </div>
+              <progress value="95" max="100"></progress>
+            </div>
+          </div>
+        </div>
+        <div id="contact">
+          <h2>İletişim</h2>
+          <div class="contact-box">
+            <div class="social-box"></div>
+            <div class="form-box">
+              <input type="text" />
+              <input type="email" name="" id="" />
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <a href="" class="btn">Gonder</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <h3>Copyright © 2023</h3>
+          <a href="#">Mehmet</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
