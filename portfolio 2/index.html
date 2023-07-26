@@ -26,10 +26,27 @@
       body {
         margin: 0;
         font-size: 20px;
+        font-family: "Asap Condensed", sans-serif;
       }
       h1 {
         letter-spacing: 0.1rem;
         line-height: 2rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: -2rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      .red {
+        color: red;
+      }
+      .blue {
+        color: blue;
       }
       .fb1 {
         display: flex;
@@ -52,11 +69,11 @@
         padding: 0.5rem 1rem;
       }
       .btn:hover {
-        animation: scale 1s;
+        animation: scale 0.5s both;
       }
       @keyframes scale {
         100% {
-          transform: translateY(100px);
+          font-size: 1.6rem;
         }
       }
       .btn i {
@@ -76,11 +93,22 @@
         justify-content: space-between;
         align-items: center;
         padding: 50px 0;
+        box-shadow: -12px -8px 40px rgba(70, 70, 70, 0.12) inset;
       }
       .logo {
-        width: 100px;
-        height: 50px;
-        background-color: purple;
+        font-family: "Bebas Neue", sans-serif;
+      }
+      .logo a {
+        display: flex;
+        font-size: 2rem;
+        color: rgb(38, 99, 230);
+        padding: 1rem;
+      }
+      .logo a:hover {
+        color: rgb(34, 12, 205);
+      }
+      .logo .logo-text {
+        margin-right: 0.1rem;
       }
       .nav {
         display: flex;
@@ -116,13 +144,13 @@
       }
       #home {
         height: 80vh;
-        background-color: gray;
-        padding: 50px 40px;
+        background-color: rgba(128, 128, 128, 0.109);
+        padding: 4rem 4rem;
         line-height: 1.5rem;
       }
       #home .image {
-        width: 150px;
-        height: 250px;
+        width: 9rem;
+        height: 15rem;
         background-color: aqua;
         animation: jump 5s infinite;
       }
@@ -139,49 +167,148 @@
       }
 
       #project {
-        padding: 50px 40px;
+        padding: 2.5rem 2rem;
         margin-top: -25px;
         background-color: #fff;
+        font-size: 1rem;
+        box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset,
+          0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+      }
+      #project .btn {
+        margin-right: 0.5rem;
       }
       .pros {
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 2rem;
       }
       .pro {
+        height: auto;
+        width: 20rem;
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-between;
-        margin-bottom: 60px;
+        margin: 3rem 0;
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.45);
+      }
+      .pro .btn-box {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 3rem;
       }
       .pro-text {
-        width: 45%;
         height: 15rem;
+      }
+      .pro h3 {
+        text-align: center;
       }
       .pro-img-box {
         height: 10rem;
-        width: 45%;
-        margin: auto 0;
+        margin: auto;
       }
       .pro-img {
-        width: 100%;
+        height: 100%;
       }
       #about {
         background-color: #fff;
-        height: 100vh;
+        font-size: 1rem;
+        padding: 2.5rem 2rem;
+        background-color: rgba(128, 128, 128, 0.084);
+      }
+      .info-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem;
+      }
+      .info {
+        width: 45%;
+      }
+      .info .items {
+      }
+      .info .items .item {
+        padding: 0.5rem;
+        border-bottom: 1px solid gray;
+        display: flex;
+        justify-content: space-between;
+      }
+      .stats {
+        width: 35%;
+      }
+      .stats .stat {
+        margin-bottom: 1rem;
+      }
+      .stats .stat .stat-value {
+        display: flex;
+        justify-content: space-between;
+      }
+      .stat progress {
+        width: 100%;
+      }
+      .stat-left {
+      }
+      .stat-right {
       }
       #contact {
         height: 100vh;
+        font-size: 1rem;
+        padding: 2.5rem 2rem;
+        box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset,
+          0 -20px 10px -20px rgba(0, 0, 0, 0.45) inset;
       }
       /* main end */
       /* footer start */
       .footer {
         text-align: center;
+        font-size: 1rem;
+        background-color: black;
+        color: #fff;
+        padding: 0.5rem;
+      }
+      .footer a {
+        color: rgb(38, 99, 230);
+      }
+      .footer a:hover {
+        color: rgb(87, 68, 228);
       }
       /* footer end */
+      @media screen and (max-width: 950px) {
+        html {
+          font-size: 16px;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        html {
+          font-size: 12px;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        html {
+          font-size: 10px;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        html {
+          font-size: 8px;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
-      <div class="logo"></div>
+      <div class="logo">
+        <a href="#" class="logo-link">
+          <span class="logo-text">M</span>
+          <span class="logo-text">E</span>
+          <span class="logo-text">H</span>
+          <span class="logo-text">M</span>
+          <span class="logo-text">E</span>
+          <span class="logo-text">T</span>
+        </a>
+      </div>
       <div class="nav">
         <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
         <a href="#project"
@@ -231,10 +358,14 @@
                   obcaecati id quisquam, possimus, minima tempora eum incidunt
                   error!
                 </p>
-                <a href="" class="btn"
-                  >Github<i class="fa-brands fa-github"></i
-                ></a>
-                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+                <div class="btn-box">
+                  <a href="" class="btn"
+                    >Github<i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="" class="btn"
+                    >live<i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
               </div>
               <div class="pro-img-box">
                 <img src="img/dopefolio.jpg" class="pro-img" alt="" />
@@ -249,10 +380,14 @@
                   obcaecati id quisquam, possimus, minima tempora eum incidunt
                   error!
                 </p>
-                <a href="" class="btn"
-                  >Github<i class="fa-brands fa-github"></i
-                ></a>
-                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+                <div class="btn-box">
+                  <a href="" class="btn"
+                    >Github<i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="" class="btn"
+                    >live<i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
               </div>
               <div class="pro-img-box">
                 <img src="img/dopefolio.jpg" class="pro-img" alt="" />
@@ -267,10 +402,14 @@
                   obcaecati id quisquam, possimus, minima tempora eum incidunt
                   error!
                 </p>
-                <a href="" class="btn"
-                  >Github<i class="fa-brands fa-github"></i
-                ></a>
-                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+                <div class="btn-box">
+                  <a href="" class="btn"
+                    >Github<i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="" class="btn"
+                    >live<i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
               </div>
               <div class="pro-img-box">
                 <img src="img/dopefolio.jpg" class="pro-img" alt="" />
@@ -285,10 +424,14 @@
                   obcaecati id quisquam, possimus, minima tempora eum incidunt
                   error!
                 </p>
-                <a href="" class="btn"
-                  >Github<i class="fa-brands fa-github"></i
-                ></a>
-                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+                <div class="btn-box">
+                  <a href="" class="btn"
+                    >Github<i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="" class="btn"
+                    >live<i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
               </div>
               <div class="pro-img-box">
                 <img src="img/dopefolio.jpg" class="pro-img" alt="" />
@@ -303,13 +446,17 @@
                   obcaecati id quisquam, possimus, minima tempora eum incidunt
                   error!
                 </p>
-                <a href="" class="btn"
-                  >Github<i class="fa-brands fa-github"></i
-                ></a>
-                <a href="" class="btn">live<i class="fa-solid fa-link"></i></a>
+                <div class="btn-box">
+                  <a href="" class="btn"
+                    >Github<i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="" class="btn"
+                    >live<i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
               </div>
               <div class="pro-img-box">
-                <img src="dopefolio.jpg" class="pro-img" alt="" />
+                <img src="img/dopefolio.jpg" class="pro-img" alt="" />
               </div>
             </div>
           </div>
@@ -324,24 +471,49 @@
             eius magni soluta quas, quibusdam nam? Odio quae modi dolorem
             perferendis quibusdam?
           </p>
-          <div class="info">
-            <div class="items">
-              <div class="item">Rol:Full Stack</div>
-              <div class="item">
-                Email:
-                <a href="mailto:mehmetckm1@gmail.com">mehmetckm1@gmail.com</a>
+          <div class="info-box">
+            <div class="info">
+              <div class="items">
+                <div class="item">
+                  <span class="red">Rol:</span>
+                  <span class="blue">Full Stack</span>
+                </div>
+                <div class="item">
+                  <span class="red">Email:</span>
+                  <a href="mailto:mehmetckm1@gmail.com">mehmetckm1@gmail.com</a>
+                </div>
+                <div class="item">
+                  <span class="red">Freelance:</span>
+                  <span class="blue">Müsait</span>
+                </div>
+                <div class="item">
+                  <span class="red">Şehir:</span>
+                  <span class="blue">Gaziantep</span>
+                </div>
               </div>
-              <div class="item">Freelance:Musait</div>
-              <div class="item"></div>
             </div>
-          </div>
-          <div class="stats">
-            <div class="stat">
-              <div class="stat-value">
-                <div class="stat-left">HTML</div>
-                <div class="stat-right">%95</div>
+            <div class="stats">
+              <div class="stat">
+                <div class="stat-value">
+                  <div class="stat-left">HTML</div>
+                  <div class="stat-right">%95</div>
+                </div>
+                <progress value="95" max="100"></progress>
               </div>
-              <progress value="95" max="100"></progress>
+              <div class="stat">
+                <div class="stat-value">
+                  <div class="stat-left">CSS</div>
+                  <div class="stat-right">%65</div>
+                </div>
+                <progress value="65" max="100"></progress>
+              </div>
+              <div class="stat">
+                <div class="stat-value">
+                  <div class="stat-left">JavaScript</div>
+                  <div class="stat-right">%30</div>
+                </div>
+                <progress value="30" max="100"></progress>
+              </div>
             </div>
           </div>
         </div>
@@ -359,7 +531,7 @@
         </div>
         <div class="footer">
           <h3>Copyright © 2023</h3>
-          <a href="#">Mehmet</a>
+          Build by <a href="#"> Mehmet</a>
         </div>
       </div>
     </main>
