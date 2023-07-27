@@ -82,7 +82,7 @@
       }
       /* header start */
       header {
-        width: 200px;
+        width: 10rem;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -138,9 +138,9 @@
       }
       .container {
         position: absolute;
-        width: calc(100% - 201px);
+        width: calc(100% - 10rem);
         top: 0;
-        left: 200px;
+        left: 10rem;
       }
       #home {
         height: 80vh;
@@ -189,7 +189,7 @@
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
-        margin: 3rem 0;
+        margin: 3rem 2rem;
         padding: 1rem;
         border-radius: 2rem;
         box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.45);
@@ -279,20 +279,75 @@
         html {
           font-size: 16px;
         }
+        header {
+          padding: 2rem 0;
+        }
       }
       @media screen and (max-width: 800px) {
         html {
           font-size: 12px;
+        }
+        header > * {
+          font-size: 1.5rem;
+        }
+        .info-box {
+          flex-direction: column;
+        }
+        .info {
+          width: 90%;
+          margin-bottom: 3rem;
+        }
+        .stats {
+          width: 90%;
         }
       }
       @media screen and (max-width: 600px) {
         html {
           font-size: 10px;
         }
+
+        header {
+          width: 6rem;
+          align-items: center;
+        }
+        header > * {
+          font-size: 1.5rem;
+        }
+        .logo-link {
+          flex-direction: column;
+          align-items: center;
+        }
+        .nav {
+        }
+        .nav a {
+          border: 0;
+          padding: 1rem;
+        }
+        .nav a i {
+          margin: 0 auto;
+        }
+        .nav-text {
+          display: none;
+        }
+        .container {
+          left: 6rem;
+          width: calc(100% - 6rem);
+        }
+        .pro {
+          width: 70%;
+        }
+        .pro-img-box {
+          height: 15rem;
+        }
       }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 500px) {
         html {
           font-size: 8px;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        .pro-img-box {
+          height: 12rem;
         }
       }
     </style>
@@ -310,12 +365,22 @@
         </a>
       </div>
       <div class="nav">
-        <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
-        <a href="#project"
-          ><i class="fa-solid fa-diagram-project"></i>Project</a
+        <a href="#home"
+          ><i class="fa-solid fa-house"></i
+          ><span class="nav-text">Home</span></a
         >
-        <a href="#about"><i class="fa-solid fa-user"></i>About</a>
-        <a href="#contact"><i class="fa-solid fa-comment"></i>Contact</a>
+        <a href="#project"
+          ><i class="fa-solid fa-diagram-project"></i
+          ><span class="nav-text">Project</span></a
+        >
+        <a href="#about"
+          ><i class="fa-solid fa-user"></i
+          ><span class="nav-text">About</span></a
+        >
+        <a href="#contact"
+          ><i class="fa-solid fa-comment"></i
+          ><span class="nav-text">Contact</span></a
+        >
       </div>
       <div class="social">
         <h3>social</h3>
