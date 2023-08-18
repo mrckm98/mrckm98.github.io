@@ -3,7 +3,9 @@ let isim;
 pop.onmouseup = (e) => {
     isim = prompt("Adinizi giriniz");
     isim= isim.toLowerCase();
-    if (isim="samet") {
+    if (isim=="samet") {
+        alert("degirmicem spor");
+    }else if(isim="mehmet"){
         alert("degirmicem spor");
     }
 }
