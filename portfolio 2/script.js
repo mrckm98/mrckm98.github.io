@@ -5,7 +5,7 @@ pop.onmouseup = (e) => {
     isim= isim.toLowerCase();
     if (isim=="samet") {
         alert("degirmicem spor");
-    }else if(isim="mehmet"){
+    }else if(isim=="mehmet"){
         alert("degirmicem spor");
     }
 }
