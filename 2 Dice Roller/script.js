@@ -1,4 +1,4 @@
-let atilanZar = document.title;
+document.title = "Zar atma uygulamasi";
 const solZar = document.querySelectorAll(".sol-zar i");
 const sagZar = document.querySelectorAll(".sag-zar i");
 const tumI = document.querySelectorAll("i");
@@ -27,5 +27,5 @@ function zarat() {
     if (x == y) {
         alert(`tebrikler ${x + 1}:${y + 1} attiniz!`);
     }
-    atilanZar = ` Atılan Zar:${x + 1}:${y + 1}`;
+    document.title = `Atılan Zar = ${x + 1}:${y + 1}`;
 }
