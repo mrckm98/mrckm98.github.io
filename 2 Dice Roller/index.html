@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #ccc;
+    }
+
+    .b-calculator {
+        height: 300px;
+        width: 500px;
+        margin: 200px auto 0;
+        background-color: #fff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .zarlar {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        height: 80px;
+    }
+
+    .zar {
+        font-size: 80px;
+    }
+
+    .disable {
+        display: none;
+    }
+
+    .sol-zar {
+        height: 100%;
+    }
+
+    .sag-zar {
+        height: 100%;
+    }
+
+    .btn {
+        width: 100px;
+        height: 50px;
+    }
+</style>
+
+<body>
+    <div class="b-calculator">
+        <h1>Dice roll</h1>
+        <div class="zarlar">
+            <div class="sol-zar">
+                <i class="fa-solid fa-dice-one zar disable"></i>
+                <i class="fa-solid fa-dice-two zar disable"></i>
+                <i class="fa-solid fa-dice-three zar disable"></i>
+                <i class="fa-solid fa-dice-four zar disable"></i>
+                <i class="fa-solid fa-dice-five zar disable"></i>
+                <i class="fa-solid fa-dice-six zar disable"></i>
+            </div>
+            <div class="sag-zar">
+                <i class="fa-solid fa-dice-one zar disable"></i>
+                <i class="fa-solid fa-dice-two zar disable"></i>
+                <i class="fa-solid fa-dice-three zar disable"></i>
+                <i class="fa-solid fa-dice-four zar disable"></i>
+                <i class="fa-solid fa-dice-five zar disable"></i>
+                <i class="fa-solid fa-dice-six zar disable"></i>
+            </div>
+        </div>
+        <button class="btn" onclick="zarat()">Zar at</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
